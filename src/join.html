@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home &ThinSpace; &mdash; &ThinSpace; IT-CAFE</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="page-header">
+          <img src="./assets/images/logo.png" class="logo mx-auto" alt="" />
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="container">
+          <header class="section__header">
+            <h2>انضم الينا الآن</h2>
+          </header>
+
+          <div
+            class="mx-auto max-w-5xl space-y-8 rounded-lg bg-white p-6 text-black-500 shadow-section lg:space-y-12 lg:rounded-xl lg:p-10"
+          >
+            <div data-hs-stepper>
+              <ul
+                class="relative mb-8 flex flex-row items-center justify-center gap-x-6 hs-stepper-completed:hidden lg:mb-10 lg:gap-x-20"
+              >
+                <!-- Item -->
+                <li
+                  data-hs-stepper-nav-item='{ "index": 1 }'
+                  class="active group flex shrink-0 items-center gap-x-2"
+                >
+                  <span
+                    class="group inline-flex min-h-7 min-w-7 items-center align-middle text-xs focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                  >
+                    <span
+                      class="flex size-5 shrink-0 items-center justify-center rounded-full bg-gray-300 hs-stepper-active:bg-primary hs-stepper-success:bg-primary lg:size-7"
+                    >
+                      <span class="text-white hs-stepper-success:hidden"
+                        >1</span
+                      >
+                      <svg
+                        class="hidden size-3 shrink-0 text-white hs-stepper-success:block"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                    <span
+                      class="ms-2 text-sm font-bold text-black lg:text-base"
+                    >
+                      بيانات الشركة
+                    </span>
+                  </span>
+                </li>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <li
+                  data-hs-stepper-nav-item='{ "index": 2 }'
+                  class="active group flex shrink-0 items-center gap-x-2"
+                >
+                  <span
+                    class="group inline-flex min-h-7 min-w-7 items-center align-middle text-xs focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                  >
+                    <span
+                      class="flex size-5 shrink-0 items-center justify-center rounded-full bg-gray-300 hs-stepper-active:bg-primary hs-stepper-success:bg-primary lg:size-7"
+                    >
+                      <span class="text-white hs-stepper-success:hidden"
+                        >2</span
+                      >
+                      <svg
+                        class="hidden size-3 shrink-0 text-white hs-stepper-success:block"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                    <span
+                      class="ms-2 text-sm font-bold text-black lg:text-base"
+                    >
+                      البيانات الشخصية
+                    </span>
+                  </span>
+                </li>
+                <!-- End Item -->
+              </ul>
+
+              <div>
+                <!-- step-1 -->
+                <div data-hs-stepper-content-item='{ "index": 1 }'>
+                  <form>
+                    <div class="space-y-4">
+                      <p>
+                        <label for="company-name" class="label"
+                          >اسم الشركة <span>*</span></label
+                        >
+                        <input id="company-name" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="address" class="label"
+                          >العنوان <span>*</span></label
+                        >
+                        <input id="address" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="governorate" class="label"
+                          >المحافظة <span>*</span></label
+                        >
+                        <input id="governorate" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="city" class="label"
+                          >المدينة <span>*</span></label
+                        >
+                        <input id="city" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="detailed-address" class="label"
+                          >العنوان بالتفصيل <span>*</span></label
+                        >
+                        <input
+                          id="detailed-address"
+                          type="text"
+                          class="input"
+                        />
+                      </p>
+                      <p>
+                        <label for="commercial-register" class="label"
+                          >السجل التجاري <span>*</span></label
+                        >
+                        <input
+                          id="commercial-register"
+                          type="text"
+                          class="input"
+                        />
+                      </p>
+                      <p>
+                        <label for="tel" class="label"
+                          >رقم الجوال <span>*</span></label
+                        >
+                        <input id="tel" type="tel" class="input" />
+                      </p>
+                      <p>
+                        <label for="fax" class="label">رقم الفاكس</label>
+                        <input id="fax" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="url" class="label">رابط موقع الشركة</label>
+                        <input id="url" type="url" class="input" />
+                      </p>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- step-2 -->
+                <div data-hs-stepper-content-item='{ "index": 2 }'>
+                  <form>
+                    <div class="space-y-4">
+                      <p>
+                        <label for="first-name" class="label"
+                          >الإسم الأول <span>*</span></label
+                        >
+                        <input id="first-name" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="last-name" class="label"
+                          >الإسم الثاني <span>*</span></label
+                        >
+                        <input id="last-name" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="email" class="label"
+                          >البريد الإلكتروني <span>*</span></label
+                        >
+                        <input id="email" type="email" class="input" />
+                      </p>
+                      <p>
+                        <label for="id" class="label"
+                          >بطاقة الرقم القومي <span>*</span></label
+                        >
+                        <input id="id" type="text" class="input" />
+                      </p>
+                      <p>
+                        <label for="image" class="label">صورة شخصية</label>
+                        <input id="image" type="file" class="input" />
+                      </p>
+                      <p>
+                        <label for="password-1" class="label"
+                          >كلمة المرور <span>*</span></label
+                        >
+                        <span class="relative flex items-center">
+                          <input
+                            id="password-1"
+                            type="password"
+                            class="input"
+                          />
+
+                          <button
+                            type="button"
+                            data-hs-toggle-password='{ "target": "#password-1" }'
+                            class="absolute end-4"
+                          >
+                            <svg
+                              class="size-5 text-black-400 hs-password-active:hidden"
+                            >
+                              <use
+                                href="./assets/images/icons/sprite.svg#eye"
+                              ></use>
+                            </svg>
+                            <svg
+                              class="hidden size-5 text-black-400 hs-password-active:block"
+                            >
+                              <use
+                                href="./assets/images/icons/sprite.svg#eye-slash"
+                              ></use>
+                            </svg>
+                          </button>
+                        </span>
+                      </p>
+                      <p>
+                        <label for="password-2" class="label"
+                          >تأكيد كلمة المرور <span>*</span></label
+                        >
+                        <span class="relative flex items-center">
+                          <input
+                            id="password-2"
+                            type="password"
+                            class="input"
+                          />
+
+                          <button
+                            type="button"
+                            data-hs-toggle-password='{ "target": "#password-2" }'
+                            class="absolute end-4"
+                          >
+                            <svg
+                              class="size-5 text-black-400 hs-password-active:hidden"
+                            >
+                              <use
+                                href="./assets/images/icons/sprite.svg#eye"
+                              ></use>
+                            </svg>
+                            <svg
+                              class="hidden size-5 text-black-400 hs-password-active:block"
+                            >
+                              <use
+                                href="./assets/images/icons/sprite.svg#eye-slash"
+                              ></use>
+                            </svg>
+                          </button>
+                        </span>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Final Content -->
+                <div data-hs-stepper-content-item='{ "isFinal": true }'>
+                  <div class="py-10">
+                    <div class="mb-8 text-center lg:mb-14">
+                      <h2
+                        class="mb-6 text-2xl font-bold text-black lg:text-4xl"
+                      >
+                        تم إرسال بياناتك بنجاح
+                      </h2>
+                      <p class="mb-8 text-lg lg:text-xl">
+                        سيتم مراجعة البيانات من الإدارة لتفعيل الحساب
+                      </p>
+                      <a href="./index.html" class="btn lg"
+                        >رجوع للصفحة الرئيسية</a
+                      >
+                    </div>
+
+                    <img
+                      src="./assets/images/message-sent.png"
+                      class="mx-auto w-full max-w-md"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mt-8 flex items-center justify-center gap-x-2 hs-stepper-completed:hidden lg:mt-12"
+              >
+                <button
+                  type="button"
+                  class="btn lg"
+                  style="display: none"
+                  data-hs-stepper-back-btn
+                >
+                  Back
+                </button>
+                <button type="button" class="btn lg" data-hs-stepper-next-btn>
+                  <!-- disabled -->
+                  التالي
+                </button>
+                <button
+                  type="button"
+                  class="btn lg"
+                  style="display: none"
+                  data-hs-stepper-finish-btn
+                >
+                  إنضم إلينا
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <img src="./assets/images/logo.png" class="logo" alt="" />
+
+        <nav class="footer__nav">
+          <a href="./index.html">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html" aria-current="page">تواصل معنا</a>
+        </nav>
+
+        <nav class="social-links">
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </nav>
+      </footer>
+
+      <div class="container">
+        <p class="copyright" dir="ltr">&copy; 2024 Ecommerce.</p>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/preline@2.1.0/dist/preline.min.js"></script>
+  </body>
+</html>

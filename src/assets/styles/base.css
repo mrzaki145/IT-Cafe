@@ -1,0 +1,17 @@
+@import "./fonts.css";
+@import "tailwindcss/base";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply ltr:font-inter rtl:font-almarai;
+  background-color: #f7fafc;
+  /* font-family: "Almarai", sans-serif; */
+}
+
+#app {
+  @apply flex h-full flex-col;
+}

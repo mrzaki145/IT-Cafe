@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home &ThinSpace; &mdash; &ThinSpace; IT-CAFE</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="page-header">
+          <div class="flex items-center gap-4">
+            <button
+              type="button"
+              class="lg:hidden"
+              data-hs-overlay="#nav"
+              aria-controls="nav"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-8 text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+
+            <img src="./assets/images/logo.png" class="logo" alt="" />
+          </div>
+
+          <form class="search-bar">
+            <div class="input-wrapper">
+              <svg class="icon">
+                <use href="./assets/images/icons/sprite.svg#search"></use>
+              </svg>
+              <input type="text" placeholder="البحث" />
+            </div>
+
+            <select class="select">
+              <option hidden>جميع الفئات</option>
+            </select>
+
+            <button type="submit">بحث</button>
+          </form>
+
+          <div class="flex items-center justify-between gap-4 lg:gap-12">
+            <div class="hs-dropdown relative inline-flex [--trigger:hover]">
+              <button
+                type="button"
+                class="hs-dropdown-toggle flex items-center"
+              >
+                <img
+                  src="./assets/images/user-placeholder.png"
+                  class="me-2 size-8 rounded-full object-cover object-center lg:size-10"
+                  alt=""
+                />
+                <span class="me-1 ms-2 text-sm lg:text-base"
+                  >عبدالله عبدالمجيد</span
+                >
+                <svg class="size-3 text-gray lg:size-5">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-52 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    تسجيل الخروج
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="container">
+          <header class="section__header">
+            <h2>تواصل معنا</h2>
+            <p>يتم التعامل مع البيانات الخاصه بك بسريا تامه</p>
+          </header>
+
+          <div
+            class="mx-auto max-w-5xl space-y-8 rounded-lg bg-white p-6 text-black-500 shadow-section lg:space-y-12 lg:rounded-xl lg:p-10"
+          >
+            <form>
+              <div class="space-y-4">
+                <p>
+                  <label for="name" class="label">الإسم <span>*</span></label>
+                  <input id="name" type="text" class="input" />
+                </p>
+                <p>
+                  <label for="tel" class="label"
+                    >رقم الجوال <span>*</span></label
+                  >
+                  <input id="tel" type="tel" class="input" />
+                </p>
+                <p>
+                  <label for="email" class="label">البريد الإلكتروني</label>
+                  <input id="email" type="email" class="input" />
+                </p>
+                <p>
+                  <label for="address" class="label">عنوان الرسالة</label>
+                  <input id="address" type="text" class="input" />
+                </p>
+                <p>
+                  <label for="message" class="label">أكتب رسالتك</label>
+                  <textarea type="text" class="input"></textarea>
+                </p>
+              </div>
+
+              <p class="mt-8 text-center">
+                <button type="submit" class="btn lg">إرسال</button>
+              </p>
+            </form>
+          </div>
+
+          <div class="mt-10 flex items-center justify-center gap-4 lg:mt-14">
+            <svg class="size-6 text-gray lg:size-8">
+              <use href="./assets/images/icons/sprite.svg#call-history"></use>
+            </svg>
+            <p class="text-lg font-bold lg:text-2xl">
+              اتصل علي:
+              <a href="tel:+201090547000" class="text-primary">+201090547000</a>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <img src="./assets/images/logo.png" class="logo" alt="" />
+
+        <nav class="footer__nav">
+          <a href="./index.html">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html" aria-current="page">تواصل معنا</a>
+        </nav>
+
+        <nav class="social-links">
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </nav>
+      </footer>
+
+      <div class="container">
+        <p class="copyright" dir="ltr">&copy; 2024 Ecommerce.</p>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/preline@2.1.0/dist/preline.min.js"></script>
+  </body>
+</html>

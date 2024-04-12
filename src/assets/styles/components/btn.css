@@ -1,0 +1,15 @@
+.btn {
+  @apply inline-block min-w-40 rounded-full bg-primary px-4 py-3 text-center text-base font-semibold text-white transition-colors hover:bg-opacity-65 disabled:pointer-events-none disabled:opacity-50;
+}
+
+.btn.lg {
+  @apply px-6 py-3 text-lg lg:py-4;
+}
+
+.btn.xl {
+  @apply px-8 py-4 text-xl lg:py-5;
+}
+
+.btn.bordered {
+  @apply border-2 border-white bg-transparent hover:bg-white hover:text-primary;
+}

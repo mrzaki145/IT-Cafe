@@ -1,0 +1,24 @@
+.features-list {
+  @apply grid gap-5 lg:grid-cols-3;
+}
+
+.features-list li {
+  @apply rounded-xl bg-white px-6 py-8 text-center;
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.04));
+}
+.features-list .icon-wrapper {
+  @apply mx-auto mb-4 flex size-16 items-center justify-center rounded-full lg:size-24;
+  background-color: #e6f0ff;
+}
+
+.features-list img {
+  @apply size-10 lg:size-16;
+}
+
+.features-list h3 {
+  @apply mb-2 text-xl font-bold lg:text-2xl;
+}
+
+.features-list p {
+  @apply mx-auto max-w-[40ch] leading-relaxed text-black-900;
+}

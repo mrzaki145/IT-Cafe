@@ -1,0 +1,46 @@
+.header {
+  @apply bg-white;
+}
+
+.page-header {
+  @apply container flex items-center justify-between py-6 lg:py-10;
+}
+
+/* search bar  */
+.search-bar {
+  @apply hidden h-10 max-w-2xl flex-1 divide-x divide-primary overflow-hidden rounded-md border border-primary lg:flex rtl:divide-x-reverse;
+}
+
+.search-bar > * {
+  @apply px-2.5 py-2;
+}
+
+.input-wrapper {
+  @apply flex flex-1 items-center gap-1.5;
+}
+.input-wrapper svg {
+  @apply size-5 shrink-0 text-gray lg:size-6;
+}
+.input-wrapper input {
+  @apply flex-1 border-none bg-transparent outline-none placeholder:text-gray focus:ring-0;
+}
+
+.select {
+  @apply appearance-none bg-transparent pe-6 ps-10 outline-none ring-0 focus:ring-0;
+  background-image: url("/src/assets/images/icons/arrow-down.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: theme(spacing.5);
+}
+
+.search-bar button {
+  @apply bg-primary px-6 text-white transition-colors hover:bg-opacity-85 max-lg:hidden;
+}
+
+/* dropdowns */
+
+.dropdown {
+  @apply flex items-center;
+}
+
+/* navbar */

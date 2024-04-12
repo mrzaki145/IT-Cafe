@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home &ThinSpace; &mdash; &ThinSpace; IT-CAFE</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="page-header">
+          <div class="flex items-center gap-4">
+            <button
+              type="button"
+              class="lg:hidden"
+              data-hs-overlay="#nav"
+              aria-controls="nav"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-8 text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+
+            <img src="./assets/images/logo.png" class="logo" alt="" />
+          </div>
+
+          <form class="search-bar">
+            <div class="input-wrapper">
+              <svg class="icon">
+                <use href="./assets/images/icons/sprite.svg#search"></use>
+              </svg>
+              <input type="text" placeholder="البحث" />
+            </div>
+
+            <select class="select">
+              <option hidden>جميع الفئات</option>
+            </select>
+
+            <button type="submit">بحث</button>
+          </form>
+
+          <div class="flex items-center justify-between gap-4 lg:gap-12">
+            <div
+              class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+            >
+              <button
+                type="button"
+                class="hs-dropdown-toggle flex items-center"
+              >
+                <img
+                  src="./assets/images/icons/eg-flag.png"
+                  class="size-4 lg:size-6"
+                  alt=""
+                />
+                <span class="me-1 ms-2 text-sm lg:text-base">مصر</span>
+                <svg class="size-4 text-gray">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="hs-dropdown-toggle w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    مصر
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+            >
+              <button type="button" class="flex items-center">
+                <svg class="size-4 text-gray-600 lg:size-5">
+                  <use href="./assets/images/icons/sprite.svg#globe"></use>
+                </svg>
+                <span class="me-1 ms-2 text-sm lg:text-base">عربي</span>
+                <svg class="size-3 text-gray lg:size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    English
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hs-dropdown relative inline-flex [--trigger:hover]">
+              <button
+                type="button"
+                class="hs-dropdown-toggle flex items-center"
+              >
+                <img
+                  src="./assets/images/user-placeholder.png"
+                  class="me-2 size-8 rounded-full object-cover object-center lg:size-10"
+                  alt=""
+                />
+                <svg class="size-3 text-gray lg:size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-40 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    تسجيل الخروج
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav
+          id="nav"
+          class="navbar hs-overlay hidden hs-overlay-backdrop-open:bg-black/50"
+        >
+          <a href="./index.html" aria-current="page">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <ol class="breadcrumb">
+          <li>
+            <a href="./index.html"> الرئيسيه </a>
+            <svg class="text-red">
+              <use href="./assets/images/icons/sprite.svg#arrow-right"></use>
+            </svg>
+          </li>
+          <li>
+            <a href="#">
+              الاكثر مبيعا
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li aria-current="page">الهواتف الذكيه</li>
+        </ol>
+      </div>
+
+      <main>
+        <div class="container flex flex-col gap-6 lg:flex-row">
+          <aside class="w-full lg:max-w-[230px]">
+            <div
+              class="hs-accordion-group mb-12 space-y-5"
+              data-hs-accordion-always-open
+            >
+              <!-- الفئا  -->
+              <div class="hs-accordion active">
+                <button
+                  class="hs-accordion-toggle flex w-full items-center justify-between border-t border-gray-100 pt-4 text-start font-bold text-black"
+                >
+                  الفئات
+                  <svg
+                    class="size-4 text-gray transition-transform hs-accordion-active:rotate-180"
+                  >
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-down"
+                    ></use>
+                  </svg>
+                </button>
+                <div
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                >
+                  <div class="pt-5">
+                    <menu class="space-y-3">
+                      <li>
+                        <button
+                          class="text-gray aria-pressed:font-bold aria-pressed:text-black-600"
+                          aria-pressed="true"
+                        >
+                          ساعات يد ذكيه
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="text-gray aria-pressed:font-bold aria-pressed:text-black-600"
+                        >
+                          الكترونيات
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="text-gray aria-pressed:font-bold aria-pressed:text-black-600"
+                        >
+                          هواتف ذكيه
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="text-gray aria-pressed:font-bold aria-pressed:text-black-600"
+                        >
+                          لابتوب
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="text-gray aria-pressed:font-bold aria-pressed:text-black-600"
+                        >
+                          كمبييوتر جيمينج
+                        </button>
+                      </li>
+                    </menu>
+                  </div>
+                </div>
+              </div>
+              <!-- الماركات  -->
+              <div class="hs-accordion active">
+                <button
+                  class="hs-accordion-toggle flex w-full items-center justify-between border-t border-gray-100 pt-4 text-start font-bold text-black"
+                >
+                  الماركات
+                  <svg
+                    class="size-4 text-gray transition-transform hs-accordion-active:rotate-180"
+                  >
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-down"
+                    ></use>
+                  </svg>
+                </button>
+                <div
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                >
+                  <div class="pt-5">
+                    <div class="checkbox-field">
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>سامسونج</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>أبلل</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>هواوي</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>بوكو</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>لينوفو</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- السمات  -->
+              <div class="hs-accordion active">
+                <button
+                  class="hs-accordion-toggle flex w-full items-center justify-between border-t border-gray-100 pt-4 text-start font-bold text-black"
+                >
+                  السمات
+                  <svg
+                    class="size-4 text-gray transition-transform hs-accordion-active:rotate-180"
+                  >
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-down"
+                    ></use>
+                  </svg>
+                </button>
+                <div
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                >
+                  <div class="pt-5">
+                    <div class="checkbox-field">
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>معدنى</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>غطاء بلاستيكى</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>16جيجا رام</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>ذاكره كبيره</span>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <span>شكل عصرى</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- نطاق السعر  -->
+              <div class="hs-accordion active">
+                <button
+                  class="hs-accordion-toggle flex w-full items-center justify-between border-t border-gray-100 pt-4 text-start font-bold text-black"
+                >
+                  نطاق السعر
+                  <svg
+                    class="size-4 text-gray transition-transform hs-accordion-active:rotate-180"
+                  >
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-down"
+                    ></use>
+                  </svg>
+                </button>
+                <div
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                >
+                  <div class="pt-5">
+                    <div class="px-3 pt-2">
+                      <div id="slider" class="mb-4"></div>
+                    </div>
+                    <div class="mb-1.5 flex items-center gap-1.5">
+                      <div class="flex-1">
+                        <label for="from" class="mb-1 inline-block">من</label>
+                        <input
+                          id="from"
+                          type="number"
+                          class="inline-block w-full rounded-md border border-gray-200 px-2.5 py-2 focus:ring-0"
+                          value="0"
+                        />
+                      </div>
+                      <div class="flex-1">
+                        <label for="to" class="mb-1 inline-block">الى</label>
+                        <input
+                          id="to"
+                          type="number"
+                          class="inline-block w-full rounded-md border border-gray-200 px-2.5 py-2 focus:ring-0"
+                          value="999"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="w-full rounded-md border border-gray-200 bg-white py-2 text-primary transition-colors hover:bg-primary-50"
+                    >
+                      تأكيد
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- التقييم  -->
+              <div class="hs-accordion active">
+                <button
+                  class="hs-accordion-toggle flex w-full items-center justify-between border-t border-gray-100 pt-4 text-start font-bold text-black"
+                >
+                  التقييم
+                  <svg
+                    class="size-4 text-gray transition-transform hs-accordion-active:rotate-180"
+                  >
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-down"
+                    ></use>
+                  </svg>
+                </button>
+                <div
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                >
+                  <div class="pt-5">
+                    <div class="checkbox-field">
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <div class="flex items-center gap-1">
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <div class="flex items-center gap-1">
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <div class="flex items-center gap-1">
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          name="brand"
+                        />
+                        <div class="flex items-center gap-1">
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="size-6 text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn w-full">بحث</button>
+          </aside>
+
+          <section class="w-full space-y-5">
+            <header
+              class="flex items-center justify-between gap-4 rounded-md bg-white p-4 lg:ps-6"
+            >
+              <p class="text-sm text-black-800 lg:text-base">
+                122,00 نتيجه عن - الهواتف الذكيه
+              </p>
+
+              <div
+                class="flex items-center divide-x divide-gray-200 rounded-md border border-gray-200 rtl:divide-x-reverse"
+              >
+                <label class="inline-block">
+                  <input
+                    type="radio"
+                    class="peer sr-only"
+                    name="view"
+                    value="list"
+                    checked
+                  />
+
+                  <span
+                    class="inline-flex size-9 cursor-pointer items-center justify-center transition-colors hover:bg-gray-100 peer-checked:bg-gray-100"
+                  >
+                    <svg class="size-6 text-black">
+                      <use href="./assets/images/icons/sprite.svg#list"></use>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="inline-block">
+                  <input
+                    type="radio"
+                    class="peer sr-only"
+                    name="view"
+                    value="grid"
+                  />
+
+                  <span
+                    class="inline-flex size-9 cursor-pointer items-center justify-center transition-colors hover:bg-gray-100 peer-checked:bg-gray-100"
+                  >
+                    <svg class="size-6 text-black">
+                      <use href="./assets/images/icons/sprite.svg#grid"></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+            </header>
+
+            <div class="filters-list">
+              <button type="button" class="filter">
+                <svg>
+                  <use href="./assets/images/icons/sprite.svg#clear"></use>
+                </svg>
+                لينوفو
+              </button>
+              <button type="button" class="filter">
+                <svg>
+                  <use href="./assets/images/icons/sprite.svg#clear"></use>
+                </svg>
+                4 نجوم
+              </button>
+              <button type="button" class="filter">
+                <svg>
+                  <use href="./assets/images/icons/sprite.svg#clear"></use>
+                </svg>
+                4 نجوم
+              </button>
+
+              <button type="button" class="clear">ازالة الفلتر</button>
+            </div>
+
+            <div
+              id="productsList"
+              data-view="grid"
+              class="group grid gap-3 data-[view=list]:grid-cols-1 md:data-[view=grid]:grid-cols-2 lg:data-[view=grid]:grid-cols-3"
+            >
+              <a
+                href="./product-details.html"
+                class="card border border-gray-100"
+              >
+                <div
+                  class="flex flex-col lg:group-data-[view=list]:flex-row lg:group-data-[view=list]:gap-4"
+                >
+                  <img
+                    src="https://placehold.co/220"
+                    class="w-full rounded-lg object-cover object-center group-data-[view=grid]:max-h-[280px] group-data-[view=list]:max-h-[200px] lg:group-data-[view=list]:max-w-[240px]"
+                    alt=""
+                  />
+
+                  <div class="flex-1 pt-4">
+                    <h2
+                      class="text-xl font-bold group-data-[view=grid]:mb-2 group-data-[view=list]:mb-4 lg:group-data-[view=list]:text-2xl"
+                    >
+                      ابل ماك بوك اير 13.6 M2 256 جيجابايت لوحة مفاتيح عربية
+                      ستارلايت
+                    </h2>
+                    <div class="product-price mb-2 text-lg lg:text-xl">
+                      <span>7600.00</span>
+                      <span class="product-price--old ms-1">7600.00</span>
+                    </div>
+
+                    <div class="flex items-baseline gap-3">
+                      <div class="product-rating">
+                        <span>4.0</span>
+                        <div>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <svg
+                        width="6"
+                        height="6"
+                        viewBox="0 0 6 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
+                      </svg>
+
+                      <p class="text-gray">متاح 48 قطعه</p>
+                    </div>
+
+                    <p class="product-desc mt-4 group-data-[view=grid]:hidden">
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                      ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                      توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+                      طريقة لوريم
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./product-details.html"
+                class="card border border-gray-100"
+              >
+                <div
+                  class="flex flex-col lg:group-data-[view=list]:flex-row lg:group-data-[view=list]:gap-4"
+                >
+                  <img
+                    src="https://placehold.co/220"
+                    class="w-full rounded-lg object-cover object-center group-data-[view=grid]:max-h-[280px] group-data-[view=list]:max-h-[200px] lg:group-data-[view=list]:max-w-[240px]"
+                    alt=""
+                  />
+
+                  <div class="flex-1 pt-4">
+                    <h2
+                      class="text-xl font-bold group-data-[view=grid]:mb-2 group-data-[view=list]:mb-4 lg:group-data-[view=list]:text-2xl"
+                    >
+                      ابل ماك بوك اير 13.6 M2 256 جيجابايت لوحة مفاتيح عربية
+                      ستارلايت
+                    </h2>
+                    <div class="product-price mb-2 text-lg lg:text-xl">
+                      <span>7600.00</span>
+                      <span class="product-price--old ms-1">7600.00</span>
+                    </div>
+
+                    <div class="flex items-baseline gap-3">
+                      <div class="product-rating">
+                        <span>4.0</span>
+                        <div>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <svg
+                        width="6"
+                        height="6"
+                        viewBox="0 0 6 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
+                      </svg>
+
+                      <p class="text-gray">متاح 48 قطعه</p>
+                    </div>
+
+                    <p class="product-desc mt-4 group-data-[view=grid]:hidden">
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                      ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                      توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+                      طريقة لوريم
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./product-details.html"
+                class="card border border-gray-100"
+              >
+                <div
+                  class="flex flex-col lg:group-data-[view=list]:flex-row lg:group-data-[view=list]:gap-4"
+                >
+                  <img
+                    src="https://placehold.co/220"
+                    class="w-full rounded-lg object-cover object-center group-data-[view=grid]:max-h-[280px] group-data-[view=list]:max-h-[200px] lg:group-data-[view=list]:max-w-[240px]"
+                    alt=""
+                  />
+
+                  <div class="flex-1 pt-4">
+                    <h2
+                      class="text-xl font-bold group-data-[view=grid]:mb-2 group-data-[view=list]:mb-4 lg:group-data-[view=list]:text-2xl"
+                    >
+                      ابل ماك بوك اير 13.6 M2 256 جيجابايت لوحة مفاتيح عربية
+                      ستارلايت
+                    </h2>
+                    <div class="product-price mb-2 text-lg lg:text-xl">
+                      <span>7600.00</span>
+                      <span class="product-price--old ms-1">7600.00</span>
+                    </div>
+
+                    <div class="flex items-baseline gap-3">
+                      <div class="product-rating">
+                        <span>4.0</span>
+                        <div>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <svg
+                        width="6"
+                        height="6"
+                        viewBox="0 0 6 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
+                      </svg>
+
+                      <p class="text-gray">متاح 48 قطعه</p>
+                    </div>
+
+                    <p class="product-desc mt-4 group-data-[view=grid]:hidden">
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                      ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                      توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+                      طريقة لوريم
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination mt-10 lg:mt-16">
+          <button type="button" class="pagination__btn prev">
+            <svg class="pagination__arrow">
+              <use href="./assets/images/icons/sprite.svg#chevron-left"></use>
+            </svg>
+            <span aria-hidden="true" class="sr-only">Previous</span>
+          </button>
+
+          <button type="button" class="pagination__btn" aria-current="page">
+            1
+          </button>
+          <button type="button" class="pagination__btn">2</button>
+          <button type="button" class="pagination__btn">3</button>
+
+          <button type="button" class="pagination__btn next" disabled>
+            <span aria-hidden="true" class="sr-only">Next</span>
+            <svg class="pagination__arrow">
+              <use href="./assets/images/icons/sprite.svg#chevron-right"></use>
+            </svg>
+          </button>
+        </nav>
+        <!-- End Pagination -->
+      </main>
+
+      <footer class="footer">
+        <img src="./assets/images/logo.png" class="logo" alt="" />
+
+        <nav class="footer__nav">
+          <a href="./index.html" aria-current="page">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </nav>
+
+        <nav class="social-links">
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </nav>
+      </footer>
+
+      <div class="container">
+        <p class="copyright" dir="ltr">&copy; 2024 Ecommerce.</p>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/preline@2.1.0/dist/preline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".best-seller .swiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        navigation: {
+          nextEl: ".best-seller .swiper-btn.next",
+          prevEl: ".best-seller .swiper-btn.prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      new Swiper(".reviews .swiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+
+        navigation: {
+          nextEl: ".reviews .swiper-btn.next",
+          prevEl: ".reviews .swiper-btn.prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
+    <script>
+      function budgetSlider(el) {
+        const sliderWrapper = document.querySelector(el);
+        const fromInput = document.querySelector("input#from");
+        const toInput = document.querySelector("input#to");
+
+        noUiSlider.create(sliderWrapper, {
+          start: [1, 999],
+          direction: document.dir == "ltr" ? "ltr" : "rtl",
+          connect: true,
+          range: {
+            min: 0,
+            max: 999,
+          },
+        });
+
+        sliderWrapper.noUiSlider.on("update", (values) => {
+          fromInput.value = Math.round(values[0]);
+          toInput.value = Math.round(values[1]);
+        });
+        fromInput.addEventListener("input", handelInput);
+        toInput.addEventListener("input", handelInput);
+
+        function handelInput() {
+          sliderWrapper.noUiSlider.set([fromInput.value, toInput.value]);
+        }
+      }
+      budgetSlider("#slider");
+    </script>
+
+    <!-- view toggler -->
+    <script>
+      const viewInput = document.querySelectorAll('input[name="view"]');
+      const productsList = document.querySelector("#productsList");
+
+      viewInput.forEach((input) =>
+        input.addEventListener("change", handelChange),
+      );
+      checkViewOnStart();
+
+      function checkViewOnStart() {
+        const selectedView = document.querySelector(
+          "input[name=view]:checked",
+        ).value;
+
+        setView(selectedView);
+      }
+      function handelChange({ target }) {
+        const { value } = target;
+
+        setView(value);
+      }
+      function setView(type) {
+        productsList.dataset.view = type;
+      }
+    </script>
+  </body>
+</html>

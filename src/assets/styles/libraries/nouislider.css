@@ -1,0 +1,29 @@
+@import "nouislider/dist/nouislider.css";
+
+/* noUiSlider */
+
+.noUi-target {
+  @apply h-1 border-none !important;
+  background-color: #afd0ff;
+}
+.noUi-connect {
+  @apply bg-primary !important;
+}
+.noUi-horizontal .noUi-handle {
+  @apply size-4 rounded-full border-2 border-primary !important;
+  /* right: -9px !important; */
+}
+.noUi-handle::after,
+.noUi-handle::before {
+  content: none !important;
+}
+
+[dir="rtl"] .noUi-horizontal .noUi-handle {
+  left: -10px;
+  right: auto;
+}
+
+[dir="ltr"] .noUi-horizontal .noUi-handle {
+  right: -7px;
+  top: -6px;
+}

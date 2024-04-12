@@ -1,0 +1,41 @@
+.breadcrumb {
+  @apply my-5 flex items-center gap-2 whitespace-nowrap;
+}
+
+.breadcrumb li,
+.breadcrumb a {
+  @apply inline-flex  items-center gap-1 text-gray-500;
+}
+
+.breadcrumb a {
+  @apply hover:text-black-900;
+}
+.breadcrumb li {
+  @apply aria-[current]:text-primary;
+}
+
+.breadcrumb svg {
+  @apply size-4 text-gray-500 lg:size-5 ltr:rotate-180;
+}
+
+/* 
+
+    <ol class="breadcrumb">
+      <li>
+        <a href="#"> Home </a>
+        <svg>
+          <use href="./images/icons/sprite.svg#arrow-right"></use>
+        </svg>
+      </li>
+      <li>
+        <a href="#">
+          App Center
+          <svg>
+            <use href="./images/icons/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </li>
+      <li aria-current="page">Application</li>
+    </ol>
+
+*/

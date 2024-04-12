@@ -1,0 +1,48 @@
+.pagination {
+  @apply mx-auto flex w-fit items-center justify-center space-x-px overflow-hidden rounded-md border border-black-100 bg-black-100 rtl:space-x-reverse;
+}
+
+.pagination__btn {
+  @apply text-black inline-flex size-10 items-center justify-center bg-white transition-colors hover:bg-black-100;
+}
+.pagination__btn[aria-current] {
+  @apply bg-black-50 text-black-300;
+}
+.pagination__btn:disabled {
+  @apply pointer-events-none;
+}
+
+.pagination__arrow {
+  @apply text-black size-6 rtl:rotate-180;
+}
+.pagination__btn:disabled .pagination__arrow {
+  @apply text-black-300;
+}
+
+/* 
+
+    <!-- Pagination -->
+    <nav class="pagination">
+      <button type="button" class="pagination__btn prev">
+        <svg class="pagination__arrow">
+          <use href="./assets/images/icons/sprite.svg#chevron-left"></use>
+        </svg>
+        <span aria-hidden="true" class="sr-only">Previous</span>
+      </button>
+
+      <button type="button" class="pagination__btn" aria-current="page">
+        1
+      </button>
+      <button type="button" class="pagination__btn">2</button>
+      <button type="button" class="pagination__btn">3</button>
+
+      <button type="button" class="pagination__btn next" disabled>
+        <span aria-hidden="true" class="sr-only">Next</span>
+        <svg class="pagination__arrow">
+          <use href="./assets/images/icons/sprite.svg#chevron-right"></use>
+        </svg>
+      </button>
+    </nav>
+    <!-- End Pagination -->
+
+*/

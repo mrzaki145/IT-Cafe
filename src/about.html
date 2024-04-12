@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home &ThinSpace; &mdash; &ThinSpace; IT-CAFE</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+
+  <body class="bg-white">
+    <div id="app">
+      <header class="relative min-h-dvh py-20 lg:py-40">
+        <div class="absolute inset-x-0 top-0 bg-black/40 py-4 lg:py-6">
+          <div class="container">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <button
+                  type="button"
+                  class="lg:hidden"
+                  data-hs-overlay="#nav"
+                  aria-controls="nav"
+                  aria-label="Toggle navigation"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-8 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </button>
+
+                <img src="./assets/images/logo-white.png" class="logo" alt="" />
+              </div>
+
+              <nav
+                id="nav"
+                class="navbar hs-overlay white hidden border-none p-0 hs-overlay-backdrop-open:bg-black/50"
+              >
+                <a href="./index.html">الرئيسية</a>
+                <a href="./plans.html">الباقات</a>
+                <a href="./about.html">من نحن</a>
+                <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+                <a href="./contact.html" aria-current="page">تواصل معنا</a>
+              </nav>
+
+              <div class="flex items-center justify-between gap-4 lg:gap-12">
+                <div
+                  class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+                >
+                  <button
+                    type="button"
+                    class="hs-dropdown-toggle flex items-center"
+                  >
+                    <img
+                      src="./assets/images/icons/eg-flag.png"
+                      class="size-4 lg:size-6"
+                      alt=""
+                    />
+                    <span class="me-1 ms-2 text-sm text-white lg:text-base"
+                      >مصر</span
+                    >
+                    <svg class="size-4 text-gray">
+                      <use
+                        href="./assets/images/icons/sprite.svg#arrow-down"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <div
+                    class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                  >
+                    <div class="space-y-2">
+                      <button
+                        type="button"
+                        class="hs-dropdown-toggle w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                      >
+                        مصر
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+                >
+                  <button type="button" class="flex items-center">
+                    <svg class="size-4 text-gray-600 lg:size-5">
+                      <use href="./assets/images/icons/sprite.svg#globe"></use>
+                    </svg>
+                    <span class="me-1 ms-2 text-sm text-white lg:text-base"
+                      >عربي</span
+                    >
+                    <svg class="size-3 text-gray lg:size-4">
+                      <use
+                        href="./assets/images/icons/sprite.svg#arrow-down"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <div
+                    class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                  >
+                    <div class="space-y-2">
+                      <button
+                        type="button"
+                        class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                      >
+                        English
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container relative z-10 flex h-full flex-col justify-center text-center"
+        >
+          <hgroup class="mx-auto max-w-5xl">
+            <h1
+              class="mb-4 text-4xl font-bold leading-relaxed text-white lg:mb-6 lg:text-7xl lg:leading-normal"
+            >
+              مرحبا بك فى <span class="text-primary">IT</span> CAFE حيث التجارة
+              الالكترونيه
+            </h1>
+            <p
+              class="mb-8 text-xl leading-normal text-white lg:mb-12 lg:text-2xl lg:leading-relaxed"
+            >
+              .(IT CAFE)و موقع بيع وشراء لاكن للتجار فقط حيث يتم البيع فيه
+              بالجمله ولاكن بكميات ولا مكان للقطاعى أى ما يعى فهو بمثابة مجتمع
+              للتجار فقط حيث يتم به جميع النشاطات التجاريه بطرق عصريه مما ..
+            </p>
+          </hgroup>
+
+          <div
+            class="flex flex-col justify-center gap-4 lg:flex-row lg:items-center lg:gap-8"
+          >
+            <button type="button" class="btn lg" data-hs-overlay="#sign-up">
+              إنشاء حساب
+            </button>
+            <button
+              type="button"
+              class="btn lg bordered"
+              data-hs-overlay="#login"
+            >
+              تسجيل دخول
+            </button>
+          </div>
+        </div>
+
+        <img
+          src="./assets/images/about-bg.png"
+          class="absolute inset-0 -z-10 size-full object-cover object-center"
+          alt=""
+        />
+      </header>
+
+      <main class="space-y-14 py-16 lg:space-y-28 lg:py-32">
+        <section class="container">
+          <div class="grid items-center gap-6 lg:grid-cols-2 lg:gap-20">
+            <div class="max-lg:order-2">
+              <h2 class="mb-6 text-2xl font-bold lg:mb-8 lg:text-5xl">
+                من نحن
+              </h2>
+              <p class="text-lg lg:text-2xl lg:leading-relaxed">
+                من هو (IT CAFE)هو موقع بيع وشراء لاكن للتجار فقط حيث يتم البيع
+                فيه بالجمله ولاكن بكميات ولا مكان للقطاعى أى ما يعى فهو بمثابة
+                مجتمع للتجار فقط حيث يتم به جميع النشاطات التجاريه بطرق عصريه
+                مما تجعل من السهل التعامل مع الاخرين والتجارة بصورة اسهل بكتير
+                مما كان عليه فى الماضى وايضا يتيح لك موقعنا الكثير من المزايه
+                التى التى ستتعرف عليها بنفسك ومنها امكانية البيع والشاء وسهولته
+                ونتيح لكم امكانية الدفع عبر الانتر نت ونتيح لكم امكانية التواصل
+                مع العملاء بدون اى مشاكل كل هذا بسعر ذهيد وبباقات شهرية تبدأ ب
+                299.00 ج فقط
+              </p>
+            </div>
+
+            <div class="max-lg:order-1">
+              <img
+                src="./assets/images/about-img.png"
+                class="size-full max-h-[515px] object-cover object-center"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="container pt-10">
+          <header class="mb-8 text-center lg:mb-12">
+            <h2 class="text-2xl font-bold lg:text-4xl">
+              ما الذى يميز <span class="text-primary">IT</span> CAFE
+            </h2>
+          </header>
+
+          <ul class="features-list">
+            <li>
+              <div class="icon-wrapper">
+                <img
+                  class="icon"
+                  src="./assets/images/icons/protection.png"
+                  alt=""
+                />
+              </div>
+              <h3>التجارة الآمنة</h3>
+              <p>
+                كون علاقات واسعة مع أفضل التجار في المجال الإلكتروني وزود من
+                نشاطك التجاري
+              </p>
+            </li>
+            <li>
+              <div class="icon-wrapper">
+                <img
+                  class="icon"
+                  src="./assets/images/icons/global-network.png"
+                  alt=""
+                />
+              </div>
+              <h3>مجتمع مثالي</h3>
+              <p>
+                كون علاقات واسعة مع أفضل التجار في المجال الإلكتروني وزود من
+                نشاطك التجاري
+              </p>
+            </li>
+            <li>
+              <div class="icon-wrapper">
+                <img
+                  class="icon"
+                  src="./assets/images/icons/internet-security.png"
+                  alt=""
+                />
+              </div>
+              <h3>الثقة والأمان</h3>
+              <p>
+                يتمتع موقعنا بالمصداقية العالية وسرية البيانات ونتحقق دائما من
+                الأعضاء وهويتهم
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <img src="./assets/images/logo.png" class="logo" alt="" />
+
+        <nav class="footer__nav">
+          <a href="./index.html" aria-current="page">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </nav>
+
+        <nav class="social-links">
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </nav>
+      </footer>
+
+      <div class="container">
+        <p class="copyright" dir="ltr">&copy; 2024 Ecommerce.</p>
+      </div>
+    </div>
+
+    <!-- login -->
+    <div
+      id="login"
+      class="hs-overlay fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:bg-black/60"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-lg"
+      >
+        <div
+          class="register-content pointer-events-auto flex w-full flex-col rounded-xl border px-6 py-10 text-white lg:px-10 lg:py-16"
+        >
+          <h2 class="mb-6 text-center text-xl font-bold lg:mb-10 lg:text-2xl">
+            تسجيل الدخول
+          </h2>
+
+          <form class="space-y-6 lg:space-y-8">
+            <p>
+              <label for="username" class="mb-3 inline-block text-white"
+                >اسم المستخدم</label
+              >
+              <input
+                type="text"
+                id="username"
+                class="block w-full rounded-full border-2 border-white bg-transparent px-6 py-3 text-white outline-none"
+              />
+            </p>
+            <p>
+              <label for="password" class="mb-3 inline-block text-white"
+                >كلمة المرور</label
+              >
+              <span class="relative flex items-center">
+                <input
+                  id="password-1"
+                  type="password"
+                  class="block w-full rounded-full border-2 border-white bg-transparent px-6 py-3 text-white outline-none"
+                />
+
+                <button
+                  type="button"
+                  data-hs-toggle-password='{ "target": "#password-1" }'
+                  class="absolute end-4"
+                >
+                  <svg class="size-5 text-white hs-password-active:hidden">
+                    <use href="./assets/images/icons/sprite.svg#eye"></use>
+                  </svg>
+                  <svg
+                    class="hidden size-5 text-white hs-password-active:block"
+                  >
+                    <use
+                      href="./assets/images/icons/sprite.svg#eye-slash"
+                    ></use>
+                  </svg>
+                </button>
+              </span>
+            </p>
+
+            <button type="submit" class="btn lg w-full">تسجيل الدخول</button>
+          </form>
+
+          <p class="mt-6 text-center text-white lg:mt-10">
+            ليس لديك حساب؟
+            <a href="#" class="text-primary">إنشاء حساب </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign-up -->
+    <div
+      id="sign-up"
+      class="hs-overlay fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:bg-black/60"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-lg"
+      >
+        <div
+          class="register-content pointer-events-auto flex w-full flex-col rounded-xl border px-6 py-10 text-white lg:px-10 lg:py-16"
+        >
+          <h2 class="mb-6 text-center text-xl font-bold lg:mb-10 lg:text-2xl">
+            تسجيل الدخول
+          </h2>
+
+          <form class="space-y-6 lg:space-y-8">
+            <p>
+              <label for="username" class="mb-3 inline-block text-white"
+                >اسم المستخدم</label
+              >
+              <input
+                type="text"
+                id="username"
+                class="block w-full rounded-full border-2 border-white bg-transparent px-6 py-3 text-white outline-none"
+              />
+            </p>
+            <p>
+              <label for="password" class="mb-3 inline-block text-white"
+                >كلمة المرور</label
+              >
+              <span class="relative flex items-center">
+                <input
+                  id="password-2"
+                  type="password"
+                  class="block w-full rounded-full border-2 border-white bg-transparent px-6 py-3 text-white outline-none"
+                />
+
+                <button
+                  type="button"
+                  data-hs-toggle-password='{ "target": "#password-2" }'
+                  class="absolute end-4"
+                >
+                  <svg class="size-5 text-white hs-password-active:hidden">
+                    <use href="./assets/images/icons/sprite.svg#eye"></use>
+                  </svg>
+                  <svg
+                    class="hidden size-5 text-white hs-password-active:block"
+                  >
+                    <use
+                      href="./assets/images/icons/sprite.svg#eye-slash"
+                    ></use>
+                  </svg>
+                </button>
+              </span>
+            </p>
+
+            <button type="submit" class="btn lg w-full">تسجيل الدخول</button>
+          </form>
+
+          <p class="mt-6 text-center text-white lg:mt-10">
+            ليس لديك حساب؟
+            <a href="#" class="text-primary">إنشاء حساب </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/preline@2.1.0/dist/preline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".best-seller .swiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        navigation: {
+          nextEl: ".best-seller .swiper-btn.next",
+          prevEl: ".best-seller .swiper-btn.prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      new Swiper(".reviews .swiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+
+        navigation: {
+          nextEl: ".reviews .swiper-btn.next",
+          prevEl: ".reviews .swiper-btn.prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

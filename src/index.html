@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home &ThinSpace; &mdash; &ThinSpace; IT-CAFE</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="page-header">
+          <div class="flex items-center gap-4">
+            <button
+              type="button"
+              class="lg:hidden"
+              data-hs-overlay="#nav"
+              aria-controls="nav"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-8 text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+
+            <img src="./assets/images/logo.png" class="logo" alt="" />
+          </div>
+
+          <form class="search-bar">
+            <div class="input-wrapper">
+              <svg class="icon">
+                <use href="./assets/images/icons/sprite.svg#search"></use>
+              </svg>
+              <input type="text" placeholder="البحث" />
+            </div>
+
+            <select class="select">
+              <option hidden>جميع الفئات</option>
+            </select>
+
+            <button type="submit">بحث</button>
+          </form>
+
+          <div class="flex items-center justify-between gap-4 lg:gap-12">
+            <div
+              class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+            >
+              <button
+                type="button"
+                class="hs-dropdown-toggle flex items-center"
+              >
+                <img
+                  src="./assets/images/icons/eg-flag.png"
+                  class="size-4 lg:size-6"
+                  alt=""
+                />
+                <span class="me-1 ms-2 text-sm lg:text-base">مصر</span>
+                <svg class="size-4 text-gray">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="hs-dropdown-toggle w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    مصر
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+            >
+              <button type="button" class="flex items-center">
+                <svg class="size-4 text-gray-600 lg:size-5">
+                  <use href="./assets/images/icons/sprite.svg#globe"></use>
+                </svg>
+                <span class="me-1 ms-2 text-sm lg:text-base">عربي</span>
+                <svg class="size-3 text-gray lg:size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    English
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hs-dropdown relative inline-flex [--trigger:hover]">
+              <button
+                type="button"
+                class="hs-dropdown-toggle flex items-center"
+              >
+                <img
+                  src="./assets/images/user-placeholder.png"
+                  class="me-2 size-8 rounded-full object-cover object-center lg:size-10"
+                  alt=""
+                />
+                <svg class="size-3 text-gray lg:size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-40 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    تسجيل الخروج
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav
+          id="nav"
+          class="navbar hs-overlay hidden hs-overlay-backdrop-open:bg-black/50"
+        >
+          <a href="./index.html" aria-current="page">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="container">
+          <div class="banner">
+            <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+              <div class="max-lg:order-2">
+                <h2 class="mb-6 text-3xl font-bold lg:text-4xl">
+                  منصة مميزة خاصة بتجارة الإلكترونيات
+                </h2>
+                <p class="mb-8 text-xl lg:text-2xl">
+                  إختر باقة من ضمن الباقات المميزة
+                </p>
+                <a href="./join.html" class="btn lg">إنضم إلينا الآن</a>
+              </div>
+
+              <div class="max-lg:order-1">
+                <img
+                  src="./assets/images/ad-img.png"
+                  class="mx-auto max-h-72 max-w-64 object-contain object-center"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <ul class="features-list">
+            <li>
+              <div class="icon-wrapper">
+                <img
+                  class="icon"
+                  src="./assets/images/icons/protection.png"
+                  alt=""
+                />
+              </div>
+              <h3>التجارة الآمنة</h3>
+              <p>
+                كون علاقات واسعة مع أفضل التجار في المجال الإلكتروني وزود من
+                نشاطك التجاري
+              </p>
+            </li>
+            <li>
+              <div class="icon-wrapper">
+                <img
+                  class="icon"
+                  src="./assets/images/icons/global-network.png"
+                  alt=""
+                />
+              </div>
+              <h3>مجتمع مثالي</h3>
+              <p>
+                كون علاقات واسعة مع أفضل التجار في المجال الإلكتروني وزود من
+                نشاطك التجاري
+              </p>
+            </li>
+            <li>
+              <div class="icon-wrapper">
+                <img
+                  class="icon"
+                  src="./assets/images/icons/internet-security.png"
+                  alt=""
+                />
+              </div>
+              <h3>الثقة والأمان</h3>
+              <p>
+                يتمتع موقعنا بالمصداقية العالية وسرية البيانات ونتحقق دائما من
+                الأعضاء وهويتهم
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="container">
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">هواتف ذكيه</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">لابتوب</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">سماعات رأس</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">ساعات يد ذكيه</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">اكسسوارات</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">بلايستيشن</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">كاميرات</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://placehold.co/260" alt="" class="card__img" />
+
+              <div class="card__content">
+                <p class="product-name lg text-center">شاشات ذكيه</p>
+              </div>
+            </a>
+          </div>
+
+          <p class="mt-8 text-center lg:mt-10">
+            <a href="#" class="btn lg">عرض المزيد</a>
+          </p>
+        </section>
+
+        <section class="container">
+          <header class="mb-8 text-center lg:mb-12">
+            <h2 class="text-2xl font-bold lg:text-3xl">المنتجات الأكثر طلبا</h2>
+          </header>
+
+          <div class="best-seller relative">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <button class="swiper-btn prev">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#chevron-left"></use>
+              </svg>
+            </button>
+            <button class="swiper-btn next">
+              <svg>
+                <use
+                  href="./assets/images/icons/sprite.svg#chevron-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+
+          <p class="mt-8 text-center lg:mt-10">
+            <a href="./products.html" class="btn lg">عرض المزيد</a>
+          </p>
+        </section>
+
+        <section class="container">
+          <header class="mb-8 text-center lg:mb-12">
+            <h2 class="text-2xl font-bold lg:text-3xl">آراء التجار</h2>
+          </header>
+
+          <div class="reviews relative">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="reviewer">
+                      <img src="https://placehold.co/64" alt="" class="img" />
+                      <div>
+                        <p class="name">احمد عصام</p>
+                        <p class="role">تاجر جمله</p>
+                      </div>
+                    </div>
+
+                    <p class="desc">
+                      إننا نثمن موكلينا ونعتبرهم ثروتنا الوحيدة وشركاء النجاح
+                      الدائم . ولذلك نحرص على السرية والدقة في معاملتنا حيث
+                      نعتمد على السرعة وتفهم احتياجات الموكلين.
+                    </p>
+
+                    <div class="rating">
+                      <span>5.0 نجوم</span>
+                      <div class="stars">
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="reviewer">
+                      <img src="https://placehold.co/64" alt="" class="img" />
+                      <div>
+                        <p class="name">احمد عصام</p>
+                        <p class="role">تاجر جمله</p>
+                      </div>
+                    </div>
+
+                    <p class="desc">
+                      إننا نثمن موكلينا ونعتبرهم ثروتنا الوحيدة وشركاء النجاح
+                      الدائم . ولذلك نحرص على السرية والدقة في معاملتنا حيث
+                      نعتمد على السرعة وتفهم احتياجات الموكلين.
+                    </p>
+
+                    <div class="rating">
+                      <span>5.0 نجوم</span>
+                      <div class="stars">
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="reviewer">
+                      <img src="https://placehold.co/64" alt="" class="img" />
+                      <div>
+                        <p class="name">احمد عصام</p>
+                        <p class="role">تاجر جمله</p>
+                      </div>
+                    </div>
+
+                    <p class="desc">
+                      إننا نثمن موكلينا ونعتبرهم ثروتنا الوحيدة وشركاء النجاح
+                      الدائم . ولذلك نحرص على السرية والدقة في معاملتنا حيث
+                      نعتمد على السرعة وتفهم احتياجات الموكلين.
+                    </p>
+
+                    <div class="rating">
+                      <span>5.0 نجوم</span>
+                      <div class="stars">
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="reviewer">
+                      <img src="https://placehold.co/64" alt="" class="img" />
+                      <div>
+                        <p class="name">احمد عصام</p>
+                        <p class="role">تاجر جمله</p>
+                      </div>
+                    </div>
+
+                    <p class="desc">
+                      إننا نثمن موكلينا ونعتبرهم ثروتنا الوحيدة وشركاء النجاح
+                      الدائم . ولذلك نحرص على السرية والدقة في معاملتنا حيث
+                      نعتمد على السرعة وتفهم احتياجات الموكلين.
+                    </p>
+
+                    <div class="rating">
+                      <span>5.0 نجوم</span>
+                      <div class="stars">
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#star"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <button class="swiper-btn prev">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#chevron-left"></use>
+              </svg>
+            </button>
+            <button class="swiper-btn next">
+              <svg>
+                <use
+                  href="./assets/images/icons/sprite.svg#chevron-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <img src="./assets/images/logo.png" class="logo" alt="" />
+
+        <nav class="footer__nav">
+          <a href="./index.html" aria-current="page">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </nav>
+
+        <nav class="social-links">
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </nav>
+      </footer>
+
+      <div class="container">
+        <p class="copyright" dir="ltr">&copy; 2024 Ecommerce.</p>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/preline@2.1.0/dist/preline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".best-seller .swiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        navigation: {
+          nextEl: ".best-seller .swiper-btn.next",
+          prevEl: ".best-seller .swiper-btn.prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      new Swiper(".reviews .swiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+
+        navigation: {
+          nextEl: ".reviews .swiper-btn.next",
+          prevEl: ".reviews .swiper-btn.prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

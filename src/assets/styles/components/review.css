@@ -1,0 +1,31 @@
+.review-card {
+  @apply space-y-6 rounded-md bg-white p-6;
+}
+
+.reviewer {
+  @apply flex items-center gap-4;
+}
+.reviewer img {
+  @apply size-12 shrink-0 rounded-full object-cover object-center lg:size-16;
+}
+.reviewer .name {
+  @apply mb-0.5 font-bold text-black lg:text-lg;
+}
+.reviewer .role {
+  @apply text-sm font-semibold text-gray lg:text-base;
+}
+
+.review-card .desc {
+  @apply font-bold leading-relaxed;
+}
+
+.rating {
+  @apply flex items-center gap-2 text-sm;
+}
+
+.stars {
+  @apply flex items-center gap-1;
+}
+.stars svg {
+  @apply text-gold size-6;
+}

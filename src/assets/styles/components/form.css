@@ -1,0 +1,16 @@
+.label {
+  @apply mb-2 block text-black;
+}
+.label span {
+  @apply text-red;
+}
+
+.input {
+  @apply block w-full rounded-lg border border-gray-100 bg-primary-25 px-4 py-2.5 text-black outline-none transition-colors file:me-4 file:rounded-lg file:border-0 file:bg-primary file:p-3 file:font-inter file:text-white placeholder:text-black focus:border-primary focus:ring-0;
+}
+.input[type="tel"] {
+  @apply text-right ltr:text-left;
+}
+.input[type="file"] {
+  @apply p-0;
+}

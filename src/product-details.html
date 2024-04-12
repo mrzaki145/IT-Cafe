@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home &ThinSpace; &mdash; &ThinSpace; IT-CAFE</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="page-header">
+          <div class="flex items-center gap-4">
+            <button
+              type="button"
+              class="lg:hidden"
+              data-hs-overlay="#nav"
+              aria-controls="nav"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-8 text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+
+            <img src="./assets/images/logo.png" class="logo" alt="" />
+          </div>
+
+          <form class="search-bar">
+            <div class="input-wrapper">
+              <svg class="icon">
+                <use href="./assets/images/icons/sprite.svg#search"></use>
+              </svg>
+              <input type="text" placeholder="البحث" />
+            </div>
+
+            <select class="select">
+              <option hidden>جميع الفئات</option>
+            </select>
+
+            <button type="submit">بحث</button>
+          </form>
+
+          <div class="flex items-center justify-between gap-4 lg:gap-12">
+            <div
+              class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+            >
+              <button
+                type="button"
+                class="hs-dropdown-toggle flex items-center"
+              >
+                <img
+                  src="./assets/images/icons/eg-flag.png"
+                  class="size-4 lg:size-6"
+                  alt=""
+                />
+                <span class="me-1 ms-2 text-sm lg:text-base">مصر</span>
+                <svg class="size-4 text-gray">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="hs-dropdown-toggle w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    مصر
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hs-dropdown relative inline-flex [--placement:bottom-right] [--trigger:hover]"
+            >
+              <button type="button" class="flex items-center">
+                <svg class="size-4 text-gray-600 lg:size-5">
+                  <use href="./assets/images/icons/sprite.svg#globe"></use>
+                </svg>
+                <span class="me-1 ms-2 text-sm lg:text-base">عربي</span>
+                <svg class="size-3 text-gray lg:size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-32 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    English
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hs-dropdown relative inline-flex [--trigger:hover]">
+              <button
+                type="button"
+                class="hs-dropdown-toggle flex items-center"
+              >
+                <img
+                  src="./assets/images/user-placeholder.png"
+                  class="me-2 size-8 rounded-full object-cover object-center lg:size-10"
+                  alt=""
+                />
+                <svg class="size-3 text-gray lg:size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-40 rounded-xl bg-white p-1 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+              >
+                <div class="space-y-2">
+                  <button
+                    type="button"
+                    class="w-full rounded-lg px-4 py-2 text-start text-sm transition-colors hover:bg-gray-100 lg:text-base"
+                  >
+                    تسجيل الخروج
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav
+          id="nav"
+          class="navbar hs-overlay hidden hs-overlay-backdrop-open:bg-black/50"
+        >
+          <a href="./index.html" aria-current="page">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <ol class="breadcrumb">
+          <li>
+            <a href="./index.html"> الرئيسيه </a>
+            <svg class="text-red">
+              <use href="./assets/images/icons/sprite.svg#arrow-right"></use>
+            </svg>
+          </li>
+          <li>
+            <a href="#">
+              الاكثر مبيعا
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              الهواتف الذكيه
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li aria-current="page">iphone 14</li>
+        </ol>
+      </div>
+
+      <main class="space-y-12 lg:space-y-24">
+        <div>
+          <section class="container mb-5 grid gap-5 lg:grid-cols-5">
+            <div class="w-full min-w-0 lg:col-span-3">
+              <div class="mb-5 rounded-xl bg-white p-5 lg:p-7">
+                <div class="swiper gallery mb-5">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="https://placehold.co/430"
+                        class="max-h-[430px] w-full rounded-2xl object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://placehold.co/430"
+                        class="max-h-[430px] w-full rounded-2xl object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://placehold.co/430"
+                        class="max-h-[430px] w-full rounded-2xl object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://placehold.co/430"
+                        class="max-h-[430px] w-full rounded-2xl object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://placehold.co/430"
+                        class="max-h-[430px] w-full rounded-2xl object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide group p-2">
+                      <img
+                        src="https://placehold.co/120"
+                        class="aspect-square w-full rounded-md object-cover object-center ring-primary-400 ring-offset-2 transition-shadow group-[.swiper-slide-thumb-active]:ring-2"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide group p-2">
+                      <img
+                        src="https://placehold.co/120"
+                        class="aspect-square w-full rounded-md object-cover object-center ring-primary-400 ring-offset-2 transition-shadow group-[.swiper-slide-thumb-active]:ring-2"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide group p-2">
+                      <img
+                        src="https://placehold.co/120"
+                        class="aspect-square w-full rounded-md object-cover object-center ring-primary-400 ring-offset-2 transition-shadow group-[.swiper-slide-thumb-active]:ring-2"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide group p-2">
+                      <img
+                        src="https://placehold.co/120"
+                        class="aspect-square w-full rounded-md object-cover object-center ring-primary-400 ring-offset-2 transition-shadow group-[.swiper-slide-thumb-active]:ring-2"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide group p-2">
+                      <img
+                        src="https://placehold.co/120"
+                        class="aspect-square w-full rounded-md object-cover object-center ring-primary-400 ring-offset-2 transition-shadow group-[.swiper-slide-thumb-active]:ring-2"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-xl bg-white p-5 lg:p-7">
+                <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
+                  <div class="w-full lg:max-w-[500px]">
+                    <h2 class="mb-2 text-xl font-bold">
+                      ابل ماك بوك اير 13.6 M2 256 جيجابايت لوحة مفاتيح عربية
+                      ستارلايت
+                    </h2>
+                    <div class="product-price mb-2 text-lg lg:text-xl">
+                      <span>7600.00</span>
+                      <span class="product-price--old ms-1">7600.00</span>
+                    </div>
+
+                    <div class="flex items-baseline gap-3">
+                      <div class="product-rating">
+                        <span>4.0</span>
+                        <div>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gold">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                          <svg class="text-gray-200">
+                            <use
+                              href="./assets/images/icons/sprite.svg#star"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <svg
+                        width="6"
+                        height="6"
+                        viewBox="0 0 6 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
+                      </svg>
+
+                      <p class="text-gray">متاح 48 قطعه</p>
+                    </div>
+                  </div>
+
+                  <div class="w-full shrink-0 space-y-2 lg:max-w-[225px]">
+                    <p class="flex items-center justify-between gap-10">
+                      <span class="text-black">10 قطع</span>
+                      <span class="text-gray">اقل طلب</span>
+                    </p>
+                    <p class="flex items-center justify-between gap-10">
+                      <span class="text-black">الكميه المتاحه</span>
+                      <span class="text-gray">100 قطعه</span>
+                    </p>
+                    <p class="flex items-center justify-between gap-10">
+                      <span class="text-black">البلد</span>
+                      <span class="text-gray">الاسكندريه</span>
+                    </p>
+                    <p class="flex items-center justify-between gap-10">
+                      <span class="text-black">مستعمل</span>
+                      <span class="text-gray">الحاله</span>
+                    </p>
+                    <p class="flex items-center justify-between gap-10">
+                      <span class="text-black">أبلل</span>
+                      <span class="text-gray">الماركه</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full rounded-xl bg-white p-5 lg:col-span-2 lg:p-7">
+              <div class="flex h-full flex-col justify-between gap-8">
+                <div>
+                  <h2
+                    class="mb-3 text-center text-xl font-bold text-black lg:text-2xl"
+                  >
+                    معلومات التاجر
+                  </h2>
+
+                  <div class="space-y-6">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center justify-between gap-4">
+                        <img
+                          src="./assets/images/user-placeholder.png"
+                          class="me-2 size-12 rounded-full object-cover object-center"
+                          alt=""
+                        />
+                        <p class="text-lg text-black lg:text-xl">ع*** ****</p>
+                      </div>
+
+                      <svg class="size-6 text-green">
+                        <use
+                          href="./assets/images/icons/sprite.svg#diploma"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <div
+                      class="space-y-6 divide-y divide-gray-200 border-b border-gray-200 pb-6"
+                    >
+                      <div class="space-y-3">
+                        <p class="flex items-center justify-between gap-10">
+                          <span class="font-semibold text-black">المدينه:</span>
+                          <span
+                            class="flex-1 truncate text-end text-lg text-gray"
+                            >الاسكندريه</span
+                          >
+                        </p>
+                        <p class="flex items-center justify-between gap-10">
+                          <span class="font-semibold text-black">البلد :</span>
+                          <span
+                            class="flex-1 truncate text-end text-lg text-gray"
+                            >م**********</span
+                          >
+                        </p>
+                        <p class="flex items-center justify-between gap-10">
+                          <span class="font-semibold text-black"
+                            >الرمز البريدى: :</span
+                          >
+                          <span
+                            class="flex-1 truncate text-end text-lg text-gray"
+                            >8**********</span
+                          >
+                        </p>
+                        <p class="flex items-center justify-between gap-10">
+                          <span class="font-semibold text-black"
+                            >شارع رقم: :</span
+                          >
+                          <span
+                            class="flex-1 truncate text-end text-lg text-gray"
+                            >ب****ع****ش****</span
+                          >
+                        </p>
+                      </div>
+                      <div class="space-y-3 pt-6">
+                        <p class="flex items-center justify-between gap-10">
+                          <span class="font-semibold text-black"
+                            >رقم الهاتف :</span
+                          >
+                          <span
+                            class="flex-1 truncate text-end text-lg text-gray"
+                            >+20*****</span
+                          >
+                        </p>
+                        <p class="flex items-center justify-between gap-10">
+                          <span class="font-semibold text-black"
+                            >البريد الالكتروني :</span
+                          >
+                          <span
+                            class="flex-1 truncate text-end text-lg text-gray"
+                            >8*******</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="mb-3 text-center text-lg font-bold lg:text-xl">
+                    ساعات العمل
+                  </h2>
+                  <p class="mb-8 text-center">
+                    24 ساعه على الدوام / جميع ايام الاسبوع
+                  </p>
+
+                  <div
+                    class="mb-10 flex flex-col items-center justify-center gap-4 lg:mb-16 lg:flex-row"
+                  >
+                    <a
+                      href="tel:911"
+                      class="btn inline-flex w-full items-center justify-center gap-2 bg-green lg:w-auto"
+                    >
+                      <svg class="size-5 text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#phone-enabled"
+                        ></use>
+                      </svg>
+                      اتصال
+                    </a>
+                    <a
+                      href="mailto:test@gmail.com"
+                      class="btn inline-flex w-full items-center justify-center gap-2 lg:w-auto"
+                    >
+                      <svg class="size-5 text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#email"
+                        ></use>
+                      </svg>
+                      رسالة
+                    </a>
+                  </div>
+
+                  <a
+                    href="#"
+                    class="btn lg w-full border border-primary bg-transparent text-primary hover:bg-primary hover:text-white"
+                  >
+                    عرض الصفحة الشخصية
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="container">
+            <div class="rounded-xl bg-white p-5 lg:p-7">
+              <h2
+                class="mb-6 text-lg font-bold text-primary lg:mb-8 lg:text-xl"
+              >
+                تفاصيل المنتج
+              </h2>
+
+              <table
+                class="border- mb-8 w-full max-w-[750px] table-fixed lg:mb-10"
+              >
+                <tbody>
+                  <tr>
+                    <td class="border px-4 py-3">موديل</td>
+                    <td class="border px-4 py-3">#987654321</td>
+                  </tr>
+                  <tr>
+                    <td class="border px-4 py-3">موديل</td>
+                    <td class="border px-4 py-3">#987654321</td>
+                  </tr>
+                  <tr>
+                    <td class="border px-4 py-3">موديل</td>
+                    <td class="border px-4 py-3">#987654321</td>
+                  </tr>
+                  <tr>
+                    <td class="border px-4 py-3">موديل</td>
+                    <td class="border px-4 py-3">#987654321</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3 class="mb-3 text-xl font-bold lg:mb-6 lg:text-2xl">
+                المواصفات الرئيسية / الميزات الخاصة:
+              </h3>
+
+              <ul class="list-disc space-y-4 ps-4 text-gray">
+                <li>
+                  <span class="font-semibold text-black"
+                    >وحدة معالجة الرسومات:</span
+                  >
+                  الرسومات 4400
+                </li>
+                <li>
+                  <span class="font-semibold text-black">الشاشة:</span> 15.6
+                  بوصة 1920*1080 IPS
+                </li>
+                <li>
+                  <span class="font-semibold text-black"
+                    >ذاكرة الوصول العشوائي:</span
+                  >
+                  DDR3 8 جيجابايت على اللوحة الأم
+                </li>
+                <li>
+                  <span class="font-semibold text-black">تمديد التخزين:</span>
+                  دعم بطاقة TF/SD
+                </li>
+                <li>
+                  <span class="font-semibold text-black">واي فاي:</span> واي فاي
+                  مزدوج (2.4G+5G) + BT 4.0
+                </li>
+                <li>
+                  <span class="font-semibold text-black">الكاميرا:</span> أمامية
+                  2.0 ميجابكسل
+                </li>
+                <li>
+                  <span class="font-semibold text-black">نظام التشغيل:</span>
+                  نظام التشغيل ويندوز 10
+                </li>
+                <li>
+                  <span class="font-semibold text-black"
+                    >وحدة المعالجة المركزية:</span
+                  >
+                  معالجات Celeron core i3 i5 i7 4005U-4650U، وذاكرة تخزين مؤقت
+                  ذكية سعة 4 ميجابايت، بسرعة 1.80 جيجا هرتز إلى 3.0 جيجا هرتز
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <section class="container">
+          <header class="mb-8 lg:mb-10">
+            <h2 class="text-2xl font-bold lg:text-3xl">قد يعجبك ايضا</h2>
+          </header>
+
+          <div class="best-seller relative">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="https://placehold.co/220"
+                      alt=""
+                      class="card__img"
+                    />
+
+                    <div class="card__content">
+                      <p class="product-name lg">كمبيوتر أبل أير برو</p>
+                      <p class="product-desc">لابتوب من شركة ابل</p>
+                      <p class="product-price">22000.00ج</p>
+
+                      <div
+                        class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5"
+                      >
+                        <p class="product-price--old">25000.00ج</p>
+                        <p>متاح (26) قطعه</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <button class="swiper-btn prev">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#chevron-left"></use>
+              </svg>
+            </button>
+            <button class="swiper-btn next">
+              <svg>
+                <use
+                  href="./assets/images/icons/sprite.svg#chevron-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+
+          <p class="mt-8 text-center lg:mt-10">
+            <a href="#" class="btn lg">عرض المزيد</a>
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <img src="./assets/images/logo.png" class="logo" alt="" />
+
+        <nav class="footer__nav">
+          <a href="./index.html" aria-current="page">الرئيسية</a>
+          <a href="./plans.html">الباقات</a>
+          <a href="./about.html">من نحن</a>
+          <a href="./terms-and-conditions.html">الشروط والأحكام</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </nav>
+
+        <nav class="social-links">
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </nav>
+      </footer>
+
+      <div class="container">
+        <p class="copyright" dir="ltr">&copy; 2024 Ecommerce.</p>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/preline@2.1.0/dist/preline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".gallery", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        mousewheel: false,
+        grabCursor: false,
+        thumbs: {
+          swiper: ".thumbs",
+        },
+      });
+
+      new Swiper(".thumbs", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        freeMode: false,
+        breakpoints: {
+          0: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
+        },
+      });
+
+      new Swiper(".best-seller .swiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        navigation: {
+          nextEl: ".best-seller .swiper-btn.next",
+          prevEl: ".best-seller .swiper-btn.prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

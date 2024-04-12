@@ -1,0 +1,86 @@
+@import "swiper/swiper-bundle.css";
+
+.swiper {
+  --swiper-theme-color: #008ecc;
+}
+
+.swiper-pagination {
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 7px;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-inactive-color: #96c0ff;
+  --swiper-pagination-bullet-border-radius: theme(borderRadius.full);
+
+  @apply static m-0 mt-8 lg:mt-12;
+}
+
+.swiper-pagination-bullet {
+  transition: width 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-pagination-bullet-width: 24px;
+}
+
+.swiper-btn {
+  @apply absolute z-30 max-lg:bottom-0 lg:top-1/2 lg:-translate-y-1/2;
+}
+
+.swiper-btn.prev {
+  @apply max-lg:start-0 lg:end-full lg:-translate-x-4 lg:rtl:translate-x-4;
+}
+
+.swiper-btn.next {
+  @apply max-lg:end-0 lg:start-full lg:translate-x-4 lg:rtl:-translate-x-4;
+}
+
+.swiper-btn svg {
+  @apply size-7 text-black rtl:rotate-180;
+}
+.swiper-btn:disabled svg {
+  @apply opacity-25;
+}
+
+/* 
+
+      <div class="relative">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <button class="swiper-btn prev">
+          <svg>
+            <use href="./assets/images/icons/sprite.svg#chevron-left"></use>
+          </svg>
+        </button>
+        <button class="swiper-btn next">
+          <svg>
+            <use href="./assets/images/icons/sprite.svg#chevron-right"></use>
+          </svg>
+        </button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper(".swiper", {
+          // If we need pagination
+          pagination: {
+            el: ".swiper-pagination",
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-btn.next",
+            prevEl: ".swiper-btn.prev",
+          },
+        });
+
+*/

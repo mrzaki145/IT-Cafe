@@ -1,0 +1,25 @@
+.footer {
+  @apply mt-16 space-y-6 border-y border-gray-100 bg-white px-4 py-12 lg:mt-24 lg:py-24;
+}
+
+.footer .logo {
+  @apply mx-auto;
+}
+
+.footer__nav {
+  @apply flex flex-wrap items-center justify-center gap-x-5 gap-y-3 lg:gap-x-10;
+}
+.footer__nav a {
+  @apply font-medium text-black transition-colors hover:text-opacity-40 aria-[current]:text-primary;
+}
+
+.social-links {
+  @apply flex items-center justify-center gap-4;
+}
+.social-links svg {
+  @apply size-6 text-primary hover:text-black;
+}
+
+.copyright {
+  @apply py-5 text-end font-inter text-gray-600 ltr:text-end rtl:text-start;
+}

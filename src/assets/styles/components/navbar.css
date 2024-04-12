@@ -1,0 +1,15 @@
+.navbar {
+  @apply flex flex-col items-center justify-center gap-10 border-y border-gray-100 bg-white py-6 transition-transform max-lg:fixed max-lg:inset-y-0 max-lg:start-0 max-lg:z-50 max-lg:w-64 max-lg:translate-x-full max-lg:bg-white max-lg:hs-overlay-open:translate-x-0 lg:flex-row;
+  @apply lg:flex !important;
+}
+
+.navbar a {
+  @apply text-black transition-colors hover:text-opacity-40 aria-[current]:text-primary;
+}
+
+.navbar.white {
+  @apply lg:bg-transparent;
+}
+.navbar.white a {
+  @apply text-white hover:text-opacity-40 max-lg:bg-white max-lg:text-black;
+}

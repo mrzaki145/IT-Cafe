@@ -1,0 +1,13 @@
+@import "tailwindcss/components";
+
+@import "./components/header.css";
+@import "./components/navbar.css";
+@import "./components/footer.css";
+@import "./components/card.css";
+@import "./components/btn.css";
+@import "./components/breadcrumb.css";
+@import "./components/pagination.css";
+@import "./components/form.css";
+
+@import "./components/features-list.css";
+@import "./components/review.css";

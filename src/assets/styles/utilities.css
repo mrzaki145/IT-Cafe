@@ -1,0 +1,103 @@
+@import "tailwindcss/utilities";
+
+.main {
+  @apply flex-1 space-y-14 py-10 lg:space-y-24;
+}
+
+.logo {
+  @apply h-4 lg:h-8;
+}
+
+.section__header {
+  @apply mb-8 text-center lg:mb-12;
+}
+.section__header h2 {
+  @apply text-2xl font-bold lg:text-4xl;
+}
+.section__header p {
+  @apply mt-4 text-xl text-gray lg:text-2xl;
+}
+
+.banner {
+  @apply rounded-2xl bg-primary-950 bg-[left_10%_top] bg-no-repeat px-6 py-12 text-white lg:px-10 lg:py-8 lg:ps-20 ltr:bg-[right_10%_top];
+  background-image: url("./../images/banner-bg.png");
+  background-size: auto 100%;
+}
+
+/* plans */
+
+.plan {
+  @apply relative flex flex-col items-center justify-between gap-6 rounded-md bg-white p-8 pt-10 lg:p-10 lg:pt-16;
+}
+.tag {
+  @apply absolute start-8 top-6 inline-flex h-8 items-center justify-center rounded-full bg-green px-3 leading-none text-white;
+}
+.plan__title {
+  @apply mb-4 text-center text-xl font-bold text-black lg:mb-6 lg:text-3xl;
+}
+.plan__price {
+  @apply mb-8 text-center text-xl font-bold text-primary lg:mb-10 lg:text-3xl;
+}
+.plan__price .old {
+  @apply text-base font-medium text-gray line-through lg:text-lg;
+}
+.plan__features {
+  @apply mb-12 space-y-4 lg:space-y-6;
+}
+.plan__features li {
+  @apply flex items-center gap-2;
+}
+.plan__features li .icon {
+  @apply inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-gray-100;
+}
+.plan__features li .icon svg {
+  @apply size-4 text-gray-300;
+}
+.plan__features li .text {
+  @apply text-black lg:text-lg;
+}
+.plan__features li .text.line-through {
+  @apply text-gray;
+}
+
+/* register-content */
+.register-content {
+  @apply rounded-3xl border border-[#8C8C8C] backdrop-blur-lg;
+  background: linear-gradient(
+    180deg,
+    rgba(113, 113, 113, 0.65) 0%,
+    rgba(36, 36, 36, 0.65) 100%
+  );
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+}
+
+.checkbox-field {
+  @apply space-y-3;
+}
+.checkbox-field label {
+  @apply flex items-center gap-3 text-gray;
+}
+.checkbox-field input:checked + span {
+  @apply text-black;
+}
+
+.form-checkbox {
+  @apply size-5 rounded-md border border-gray-300 bg-transparent outline-none ring-0 focus:ring-0;
+}
+
+/* filters-list */
+
+.filters-list {
+  @apply flex flex-wrap items-center gap-2;
+}
+
+.filter {
+  @apply flex items-center gap-1.5 text-nowrap rounded-md border border-primary p-1.5 pe-2.5 text-black transition-colors hover:bg-primary-100;
+}
+.filter svg {
+  @apply size-5 text-gray;
+}
+
+.clear {
+  @apply ms-4 text-primary transition-colors hover:text-primary-500;
+}
