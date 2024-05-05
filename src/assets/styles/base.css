@@ -6,10 +6,13 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply ltr:font-inter rtl:font-almarai;
+  @apply text-black ltr:font-inter rtl:font-almarai;
   background-color: #f7fafc;
-  /* font-family: "Almarai", sans-serif; */
 }
 
 #app {

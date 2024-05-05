@@ -6,12 +6,13 @@
     <title>Home &ThinSpace; &mdash; &ThinSpace; IT-CAFE</title>
 
     <link rel="stylesheet" href="./assets/styles/main.css" />
+    <script defer src="./assets/scripts/main.js"></script>
   </head>
 
   <body class="bg-white">
     <div id="app">
-      <header class="relative min-h-dvh py-20 lg:py-40">
-        <div class="absolute inset-x-0 top-0 bg-black/40 py-4 lg:py-6">
+      <header class="relative flex min-h-dvh flex-col py-20 lg:py-40">
+        <div class="absolute inset-x-0 top-0 z-20 bg-black/40 py-4 lg:py-6">
           <div class="container">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-4">
@@ -124,7 +125,7 @@
         </div>
 
         <div
-          class="container relative z-10 flex h-full flex-col justify-center text-center"
+          class="container relative z-10 flex flex-1 flex-col justify-center text-center"
         >
           <hgroup class="mx-auto max-w-5xl">
             <h1
@@ -294,10 +295,16 @@
       </div>
     </div>
 
+    <button type="button" id="scrollToTopBtn" class="to-top">
+      <svg>
+        <use href="./assets/images/icons/sprite.svg#arrow-double-down"></use>
+      </svg>
+    </button>
+
     <!-- login -->
     <div
       id="login"
-      class="hs-overlay fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:bg-black/60"
+      class="hs-overlay fixed start-0 top-0 z-[100] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:bg-black/60"
     >
       <div
         class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-lg"
@@ -429,6 +436,7 @@
     </div>
 
     <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/preline@2.1.0/dist/preline.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

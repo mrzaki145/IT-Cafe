@@ -101,3 +101,12 @@
 .clear {
   @apply ms-4 text-primary transition-colors hover:text-primary-500;
 }
+
+/* to-top */
+.to-top {
+  @apply fixed bottom-4 start-4 inline-flex size-12 items-center justify-center rounded-full bg-white shadow-lg lg:bottom-8 lg:start-8;
+}
+
+.to-top svg {
+  @apply size-6 rotate-180 text-black;
+}

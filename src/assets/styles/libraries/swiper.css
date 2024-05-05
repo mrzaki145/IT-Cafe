@@ -27,11 +27,11 @@
 }
 
 .swiper-btn.prev {
-  @apply max-lg:start-0 lg:end-full lg:-translate-x-4 lg:rtl:translate-x-4;
+  @apply max-lg:start-0 lg:end-full lg:-translate-x-2 lg:rtl:translate-x-2;
 }
 
 .swiper-btn.next {
-  @apply max-lg:end-0 lg:start-full lg:translate-x-4 lg:rtl:-translate-x-4;
+  @apply max-lg:end-0 lg:start-full lg:translate-x-2 lg:rtl:-translate-x-2;
 }
 
 .swiper-btn svg {
