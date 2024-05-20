@@ -11,8 +11,8 @@
 
   <body class="bg-white">
     <div id="app">
-      <header class="relative flex min-h-dvh flex-col py-20 lg:py-40">
-        <div class="absolute inset-x-0 top-0 z-20 bg-black/40 py-4 lg:py-6">
+      <header class="relative flex flex-col ">
+        <div class="py-4 lg:py-6">
           <div class="container">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-4">
@@ -39,12 +39,12 @@
                   </svg>
                 </button>
 
-                <img src="./assets/images/logo-white.png" class="logo" alt="" />
+                <img src="./assets/images/logo.png" class="logo" alt="" />
               </div>
 
               <nav
                 id="nav"
-                class="navbar hs-overlay white hidden border-none p-0 hs-overlay-backdrop-open:bg-black/50"
+                class="navbar hs-overlay hidden border-none p-0 hs-overlay-backdrop-open:bg-black/50"
               >
                 <a href="./index.html">الرئيسية</a>
                 <a href="./plans.html">الباقات</a>
@@ -66,7 +66,7 @@
                       class="size-4 lg:size-6"
                       alt=""
                     />
-                    <span class="me-1 ms-2 text-sm text-white lg:text-base"
+                    <span class="me-1 ms-2 text-sm lg:text-base"
                       >مصر</span
                     >
                     <svg class="size-4 text-gray">
@@ -96,7 +96,7 @@
                     <svg class="size-4 text-gray-600 lg:size-5">
                       <use href="./assets/images/icons/sprite.svg#globe"></use>
                     </svg>
-                    <span class="me-1 ms-2 text-sm text-white lg:text-base"
+                    <span class="me-1 ms-2 text-sm lg:text-base"
                       >عربي</span
                     >
                     <svg class="size-3 text-gray lg:size-4">
@@ -123,47 +123,6 @@
             </div>
           </div>
         </div>
-
-        <div
-          class="container relative z-10 flex flex-1 flex-col justify-center text-center"
-        >
-          <hgroup class="mx-auto max-w-5xl">
-            <h1
-              class="mb-4 text-4xl font-bold leading-relaxed text-white lg:mb-6 lg:text-7xl lg:leading-normal"
-            >
-              مرحبا بك فى <span class="text-primary">IT</span> CAFE حيث التجارة
-              الالكترونيه
-            </h1>
-            <p
-              class="mb-8 text-xl leading-normal text-white lg:mb-12 lg:text-2xl lg:leading-relaxed"
-            >
-              .(IT CAFE)و موقع بيع وشراء لاكن للتجار فقط حيث يتم البيع فيه
-              بالجمله ولاكن بكميات ولا مكان للقطاعى أى ما يعى فهو بمثابة مجتمع
-              للتجار فقط حيث يتم به جميع النشاطات التجاريه بطرق عصريه مما ..
-            </p>
-          </hgroup>
-
-          <div
-            class="flex flex-col justify-center gap-4 lg:flex-row lg:items-center lg:gap-8"
-          >
-            <button type="button" class="btn lg" data-hs-overlay="#sign-up">
-              إنشاء حساب
-            </button>
-            <button
-              type="button"
-              class="btn lg bordered"
-              data-hs-overlay="#login"
-            >
-              تسجيل دخول
-            </button>
-          </div>
-        </div>
-
-        <img
-          src="./assets/images/about-bg.png"
-          class="absolute inset-0 -z-10 size-full object-cover object-center"
-          alt=""
-        />
       </header>
 
       <main class="space-y-14 py-16 lg:space-y-28 lg:py-32">

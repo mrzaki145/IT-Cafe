@@ -589,312 +589,105 @@
               <p class="text-sm text-black-800 lg:text-base">
                 122,00 نتيجه عن - الهواتف الذكيه
               </p>
-
-              <div
-                class="flex items-center divide-x divide-gray-200 rounded-md border border-gray-200 rtl:divide-x-reverse"
-              >
-                <label class="inline-block">
-                  <input
-                    type="radio"
-                    class="peer sr-only"
-                    name="view"
-                    value="list"
-                    checked
-                  />
-
-                  <span
-                    class="inline-flex size-9 cursor-pointer items-center justify-center transition-colors hover:bg-gray-100 peer-checked:bg-gray-100"
-                  >
-                    <svg class="size-6 text-black">
-                      <use href="./assets/images/icons/sprite.svg#list"></use>
-                    </svg>
-                  </span>
-                </label>
-
-                <label class="inline-block">
-                  <input
-                    type="radio"
-                    class="peer sr-only"
-                    name="view"
-                    value="grid"
-                  />
-
-                  <span
-                    class="inline-flex size-9 cursor-pointer items-center justify-center transition-colors hover:bg-gray-100 peer-checked:bg-gray-100"
-                  >
-                    <svg class="size-6 text-black">
-                      <use href="./assets/images/icons/sprite.svg#grid"></use>
-                    </svg>
-                  </span>
-                </label>
-              </div>
             </header>
 
-            <div class="filters-list">
-              <button type="button" class="filter">
-                <svg>
-                  <use href="./assets/images/icons/sprite.svg#clear"></use>
-                </svg>
-                لينوفو
-              </button>
-              <button type="button" class="filter">
-                <svg>
-                  <use href="./assets/images/icons/sprite.svg#clear"></use>
-                </svg>
-                4 نجوم
-              </button>
-              <button type="button" class="filter">
-                <svg>
-                  <use href="./assets/images/icons/sprite.svg#clear"></use>
-                </svg>
-                4 نجوم
-              </button>
+            <div class="">
+              <div class="mb-5 overflow-x-auto">
+                <div class="inline-block min-w-full align-middle">
+                  <div class="overflow-hidden rounded-lg border shadow">
+                    <table class="min-w-full divide-y divide-gray-200 bg-white">
+                      <thead class="bg-gray-50">
+                        <tr>
+                          <th
+                            scope="col"
+                            class="w-7/12 px-6 py-3 text-start text-xs font-medium uppercase text-gray-500"
+                          >
+                            Name
+                          </th>
+                          <th
+                            scope="col"
+                            class="w-3/12 px-6 py-3 text-start text-xs font-medium uppercase text-gray-500"
+                          >
+                            Age
+                          </th>
+                          <th
+                            scope="col"
+                            class="w-2/12 px-6 py-3 text-start text-xs font-medium uppercase text-gray-500"
+                          >
+                            Date
+                          </th>
+                        </tr>
+                      </thead>
 
-              <button type="button" class="clear">ازالة الفلتر</button>
-            </div>
+                      <tbody class="divide-y divide-gray-200">
+                        <tr>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800"
+                          >
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Magni tempore nulla incidunt iste. Delectus,
+                            unde.
+                          </td>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm text-gray-800"
+                          >
+                            Lorem ipsum dolor sit amet.
+                          </td>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm text-gray-800"
+                          >
+                            45 may 2024
+                          </td>
+                        </tr>
 
-            <div
-              id="productsList"
-              data-view="grid"
-              class="group grid gap-3 data-[view=list]:grid-cols-1 md:data-[view=grid]:grid-cols-2 lg:data-[view=grid]:grid-cols-3"
-            >
-              <a
-                href="./product-details.html"
-                class="card border border-gray-100"
-              >
-                <div
-                  class="flex flex-col lg:group-data-[view=list]:flex-row lg:group-data-[view=list]:gap-4"
-                >
-                  <img
-                    src="https://placehold.co/220"
-                    class="w-full rounded-lg object-cover object-center group-data-[view=grid]:max-h-[280px] group-data-[view=list]:max-h-[200px] lg:group-data-[view=list]:max-w-[240px]"
-                    alt=""
-                  />
+                        <tr>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800"
+                          >
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Magni tempore nulla incidunt iste. Delectus,
+                            unde.
+                          </td>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm text-gray-800"
+                          >
+                            Lorem ipsum dolor sit amet.
+                          </td>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm text-gray-800"
+                          >
+                            27 may 2024
+                          </td>
+                        </tr>
 
-                  <div class="flex-1 pt-4">
-                    <h2
-                      class="text-xl font-bold group-data-[view=grid]:mb-2 group-data-[view=list]:mb-4 lg:group-data-[view=list]:text-2xl"
-                    >
-                      ابل ماك بوك اير 13.6 M2 256 جيجابايت لوحة مفاتيح عربية
-                      ستارلايت
-                    </h2>
-                    <div class="product-price mb-2 text-lg lg:text-xl">
-                      <span>7600.00</span>
-                      <span class="product-price--old ms-1">7600.00</span>
-                    </div>
-
-                    <div class="flex items-baseline gap-3">
-                      <div class="product-rating">
-                        <span>4.0</span>
-                        <div>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gray-200">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-
-                      <svg
-                        width="6"
-                        height="6"
-                        viewBox="0 0 6 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
-                      </svg>
-
-                      <p class="text-gray">متاح 48 قطعه</p>
-                    </div>
-
-                    <p class="product-desc mt-4 group-data-[view=grid]:hidden">
-                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
-                      ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
-                      توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
-                      طريقة لوريم
-                    </p>
+                        <tr>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800"
+                          >
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Magni tempore nulla incidunt iste. Delectus,
+                            unde.
+                          </td>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm text-gray-800"
+                          >
+                            Lorem ipsum dolor sit amet.
+                          </td>
+                          <td
+                            class="whitespace-nowrap px-6 py-4 text-sm text-gray-800"
+                          >
+                            31 may 2024
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-              </a>
-              <a
-                href="./product-details.html"
-                class="card border border-gray-100"
-              >
-                <div
-                  class="flex flex-col lg:group-data-[view=list]:flex-row lg:group-data-[view=list]:gap-4"
-                >
-                  <img
-                    src="https://placehold.co/220"
-                    class="w-full rounded-lg object-cover object-center group-data-[view=grid]:max-h-[280px] group-data-[view=list]:max-h-[200px] lg:group-data-[view=list]:max-w-[240px]"
-                    alt=""
-                  />
+              </div>
 
-                  <div class="flex-1 pt-4">
-                    <h2
-                      class="text-xl font-bold group-data-[view=grid]:mb-2 group-data-[view=list]:mb-4 lg:group-data-[view=list]:text-2xl"
-                    >
-                      ابل ماك بوك اير 13.6 M2 256 جيجابايت لوحة مفاتيح عربية
-                      ستارلايت
-                    </h2>
-                    <div class="product-price mb-2 text-lg lg:text-xl">
-                      <span>7600.00</span>
-                      <span class="product-price--old ms-1">7600.00</span>
-                    </div>
-
-                    <div class="flex items-baseline gap-3">
-                      <div class="product-rating">
-                        <span>4.0</span>
-                        <div>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gray-200">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-
-                      <svg
-                        width="6"
-                        height="6"
-                        viewBox="0 0 6 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
-                      </svg>
-
-                      <p class="text-gray">متاح 48 قطعه</p>
-                    </div>
-
-                    <p class="product-desc mt-4 group-data-[view=grid]:hidden">
-                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
-                      ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
-                      توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
-                      طريقة لوريم
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="./product-details.html"
-                class="card border border-gray-100"
-              >
-                <div
-                  class="flex flex-col lg:group-data-[view=list]:flex-row lg:group-data-[view=list]:gap-4"
-                >
-                  <img
-                    src="https://placehold.co/220"
-                    class="w-full rounded-lg object-cover object-center group-data-[view=grid]:max-h-[280px] group-data-[view=list]:max-h-[200px] lg:group-data-[view=list]:max-w-[240px]"
-                    alt=""
-                  />
-
-                  <div class="flex-1 pt-4">
-                    <h2
-                      class="text-xl font-bold group-data-[view=grid]:mb-2 group-data-[view=list]:mb-4 lg:group-data-[view=list]:text-2xl"
-                    >
-                      ابل ماك بوك اير 13.6 M2 256 جيجابايت لوحة مفاتيح عربية
-                      ستارلايت
-                    </h2>
-                    <div class="product-price mb-2 text-lg lg:text-xl">
-                      <span>7600.00</span>
-                      <span class="product-price--old ms-1">7600.00</span>
-                    </div>
-
-                    <div class="flex items-baseline gap-3">
-                      <div class="product-rating">
-                        <span>4.0</span>
-                        <div>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gold">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="text-gray-200">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-
-                      <svg
-                        width="6"
-                        height="6"
-                        viewBox="0 0 6 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
-                      </svg>
-
-                      <p class="text-gray">متاح 48 قطعه</p>
-                    </div>
-
-                    <p class="product-desc mt-4 group-data-[view=grid]:hidden">
-                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
-                      ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
-                      توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
-                      طريقة لوريم
-                    </p>
-                  </div>
-                </div>
-              </a>
+              <button type="button" class="btn ms-auto block w-fit">
+                عرض المزيد
+              </button>
             </div>
           </section>
         </div>
